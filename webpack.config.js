@@ -1,13 +1,16 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const { type } = require('os');
+const { type, userInfo } = require('os');
 
 module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
-        rules: [{
+        rules: [
+        {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
         },
         ],
     },
