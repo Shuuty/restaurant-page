@@ -1,6 +1,7 @@
 import createHome from "./home.js";
 import menu from "./menu.js"
 import createAbout from "./about.js"
+import './style.css';
 
 
 navEvents();

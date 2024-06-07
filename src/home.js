@@ -4,6 +4,7 @@ const createHome = () => {
 
 
     const homeCard = document.createElement(`div`);
+    homeCard.classList.add(`home-card`)
     container.appendChild(homeCard);
 
     const homeText = document.createElement(`p`);

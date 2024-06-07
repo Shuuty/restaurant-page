@@ -1,0 +1,107 @@
+body {
+    width: 100%;
+    height: auto;
+    background-image: url('/dist/images/backaground.avif');
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #000000ad;
+}
+
+/* Header Config */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 40px;
+}
+
+nav {
+    width: 30% ;
+    display: flex;
+    justify-content: space-between;
+    box-sizing:  border-box;
+}
+
+nav > button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    border: 2px solid transparent
+}
+
+nav > button:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Content */
+
+#content {
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Home */
+.home-card {
+    background-color: var(--background-color);
+    color: white;
+    font-size: 1.3rem;
+    padding: 100px;
+    border-radius: 15px;
+}
+
+/* Menu */
+
+.food-card {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+}
+
+.food-img {
+    border-radius: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+
+.food-info {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* About Card */
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding: 100px;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.about-chef {
+    display: flex;
+    align-items: center;
+}
+
+.about-chef > img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+}
